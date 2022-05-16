@@ -1,0 +1,28 @@
+div.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  div.logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 30px;
+      margin-right: 5px;
+    }
+    p {
+      font-weight: 600;
+    }
+  }
+
+  div.profile {
+    div.sign_in_button {
+      p {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}

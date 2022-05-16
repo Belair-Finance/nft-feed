@@ -1,0 +1,14 @@
+div.app {
+  width: 1000px;
+  margin: 0 auto;
+
+  div.main {
+    display: grid;
+    grid-template-columns: 50px calc(100% - 50px);
+  }
+}
+@media screen and (max-width: 1010px) {
+  div.app {
+    width: 100%;
+  }
+}
