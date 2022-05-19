@@ -10,7 +10,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className={styles.followingFeed}>
-        <a href="/">
+        <a href="Following">
           <i className="fa-solid fa-users"></i>
         </a>
       </div>

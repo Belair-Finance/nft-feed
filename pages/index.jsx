@@ -5,11 +5,12 @@ import axios from "axios";
 export default function Home() {
   const fetch_nfts = async () => {
     let res = await axios.post(
-      "https://cors-anywhere.herokuapp.com/https://nft.belair.finance/api/dummy/nfts"
+      "https://cors-anywhere.herokuapp.com/nft.belair.finance/api/dummy/nfts"
     );
     console.log(res.data);
-    trycatch((error) => console.error("FETCH ERROR:", error));
+    // trycatch((error) => console.error("FETCH ERROR:", error));
   };
+  //
 
   useEffect(() => {
     (async () => {
