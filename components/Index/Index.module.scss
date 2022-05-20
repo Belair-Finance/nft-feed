@@ -1,11 +1,30 @@
 div.index {
-  position: relative;
-  width: 30vh;
-  height: auto;
-  bottom: 0;
-  overflow: auto;
-  align-items: center;
-  margin-left: 120px;
-  margin-top: 30px;
-  border: 1px solid red;
+  div.nft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: calc(100vh - 50px);
+    width: 100%;
+
+    div.wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 70%;
+      // padding: 40px 80px;
+
+      div.nft_image {
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 20px;
+        height: 92%;
+        width: 92%;
+        border-radius: 4px;
+      }
+    }
+  }
 }

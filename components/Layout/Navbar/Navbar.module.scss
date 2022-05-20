@@ -1,32 +1,18 @@
 div.navbar {
-  border-right: 0.5px solid rgba(0, 0, 0, 0.214);
-  height: 100%;
-  position: fixed;
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
-  overflow-x: hidden;
-  overflow-y: auto;
-  overscroll-behavior-y: contain;
-  // perspective: 1px;
-  // transform-style: preserve-3d;
-  // padding-right: 12px;
-  perspective-origin: right top;
-  top: 55px;
-  bottom: 0;
-  background: rgba(255, 255, 255, 1);
-  position: fixed;
-  // z-index: 99;
-  padding-right: 8px;
+  div.wrapper {
+    position: fixed;
 
-  div.home {
-    padding: 10px;
-    padding-bottom: 20px;
-  }
+    div.home {
+      padding: 10px;
+      padding-bottom: 20px;
+    }
 
-  div.followingFeed {
-    padding: 10px;
-    padding-bottom: 20px;
-  }
-  div.following {
-    border-top: 0.5px solid rgba(0, 0, 0, 0.088);
+    div.followingFeed {
+      padding: 10px;
+      padding-bottom: 20px;
+    }
+    div.following {
+      border-top: 0.5px solid rgba(0, 0, 0, 0.088);
+    }
   }
 }

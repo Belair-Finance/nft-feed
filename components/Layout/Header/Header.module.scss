@@ -1,9 +1,14 @@
 div.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.214);
+  background-color: #fff;
 
   div.logo {
     display: flex;
