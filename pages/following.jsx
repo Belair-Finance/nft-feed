@@ -1,12 +1,8 @@
-import styles from "../Following/Following.module.scss";
-import Header from "../components/Layout/Header/Header";
-import Navbar from "../components/Layout/Navbar/Navbar";
+import styles from "../components/Following/Following.module.scss";
 
 const following = () => {
   return (
-    <div className={styles.followingFeed}>
-      <Header />
-      <Navbar />
+    <div className={styles.following_feed}>
       <div className={styles.main}></div>
     </div>
   );
