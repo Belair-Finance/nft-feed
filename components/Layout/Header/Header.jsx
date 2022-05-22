@@ -11,8 +11,12 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.logo}>
-        <img src="/logo.png" />
-        <p>Belair</p>
+        <a href="/">
+          <img src="/logo.png" />
+        </a>
+        <a href="/" style={{ color: `#000000` }}>
+          <p>Belair</p>
+        </a>
       </div>
 
       <div className={styles.profile}>
@@ -34,7 +38,7 @@ const Header = () => {
             className={styles.sign_in_button}
             onClick={() => setSignInModal(true)}
           >
-            <p>Sign in</p>
+            <p id="sign_in">Sign in</p>
           </div>
         )}
 

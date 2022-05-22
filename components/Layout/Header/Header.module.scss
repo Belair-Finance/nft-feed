@@ -14,6 +14,10 @@ div.header {
     display: flex;
     align-items: center;
 
+    a:hover {
+      cursor: pointer;
+    }
+
     img {
       width: 30px;
       margin-right: 5px;
@@ -22,12 +26,12 @@ div.header {
       font-weight: 600;
     }
   }
-
   div.profile {
     div.sign_in_button {
       p {
         font-size: 14px;
         font-weight: 500;
+        cursor: pointer;
       }
     }
   }
