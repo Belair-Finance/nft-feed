@@ -1,25 +1,9 @@
+import { useEffect } from "react";
 import styles from "../components/Index/Index.module.scss";
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import useNfts from "../hooks/useNfts";
 
 export default function Home() {
-  const [nfts, setNfts] = useState([]);
-  const [nftTitle, setNftTitle] = useState("");
-
-  const fetch_nfts = async () => {
-    const response = await axios.get(
-      "https://cors-anywhere.herokuapp.com/nft.belair.finance/api/dummy/nfts"
-      // "https://jsonplaceholder.typicode.com/todos"
-    );
-    console.log(response.data);
-    setNfts(response.data);
-  };
-
-  useEffect(() => {
-    (async () => {
-      await fetch_nfts();
-    })();
-  }, []);
+  const nfts = useNfts();
 
   return (
     <div className={styles.index}>
@@ -32,12 +16,11 @@ export default function Home() {
               <h4 className={styles.nft_owner}>
                 Owner {nft.owner_of.slice(31)}
               </h4>
-              <p>
-                <img
-                  src="https://source.boringavatars.com/marble/30/${nft.owner}?colors=512653,822a9d,6a86e9,61b2f4,e75168"
-                  alt=""
-                />
-              </p>
+              <img
+                src="https://source.boringavatars.com/marble/30/${nft.owner}?colors=512653,822a9d,6a86e9,61b2f4,e75168"
+                alt=""
+              />
+              <div className={styles.like}></div>
             </div>
             <h4 className={styles.nft_symbol}>{nft.symbol}</h4>
             <div
